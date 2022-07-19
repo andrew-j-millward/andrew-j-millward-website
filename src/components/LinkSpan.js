@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const LinkSpan = ({ page, address, active }) => {
   return (
     <div>
-      <a href={address}>
+      <Link to={address}>
         <h1 className="App-link App-header-selected">{page}</h1>
-      </a>
+      </Link>
     </div>
   );
 };

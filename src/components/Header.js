@@ -19,9 +19,9 @@ const Header = () => {
           active={activePage === "/about" ? true : false}
         />
         <span>
-          <a href="/">
+          <Link to="/">
             <img src={logo} className="App-logo" alt="logo" />
-          </a>
+          </Link>
         </span>
         <LinkSpan
           page="portfolio"
