@@ -4,7 +4,6 @@ import logo from "../Andrew-J-Millward-Portfolio-Logo-Modern-2.svg#svgView(viewB
 
 const Header = () => {
   const activePage = useLocation().pathname;
-  console.log(activePage);
   return (
     <div>
       <header className="App-header">

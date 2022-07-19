@@ -4,7 +4,11 @@ const LinkSpan = ({ page, address, active }) => {
   return (
     <div>
       <Link to={address}>
-        <h1 className="App-link App-header-selected">{page}</h1>
+        {active ? (
+          <h1 className="App-link App-header-selected">{page}</h1>
+        ) : (
+          <h1 className="App-link">{page}</h1>
+        )}
       </Link>
     </div>
   );
