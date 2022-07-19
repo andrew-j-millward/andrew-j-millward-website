@@ -12,7 +12,15 @@
   margin-top:-10px;
   margin-bottom:-40px;
   max-height: 20vh;
-  border: 5px solid blue;
+  transition-duration: 0.3s;
+}
+
+.App-logo:hover {
+  margin-top:-10px;
+  margin-bottom:-40px;
+  max-height: 20vh;
+  transform: translateY(-5%);
+  transition-duration: 0.3s;
 }
 
 .App-header {
@@ -28,7 +36,6 @@
   table-layout: fixed;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid green;
 }
 
 .App-header div {
@@ -38,7 +45,11 @@
 }
 
 .App-header-selected {
-  border: 5px solid red;
+  padding-bottom: 5px;
+  border-bottom: 5px solid transparent;
+	border-image: linear-gradient(to right, #708090, 
+  #36454f);
+	border-image-slice: 1;
 }
 
 .App-link {
@@ -48,4 +59,17 @@
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   white-space: nowrap;
+  transition-duration: 0.3s;
+  color: #708090;
+}
+
+.App-link:hover {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-60%) translateX(-50%);
+  white-space: nowrap;
+  transition-duration: 0.3s;
+  color: #36454f;
 }
