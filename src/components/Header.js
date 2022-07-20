@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import LinkSpan from "./LinkSpan";
-import logo from "../Andrew-J-Millward-Portfolio-Logo-Modern-2.svg#svgView(viewBox(70,70,0,0))";
+import logo from "../Andrew-J-Millward-Portfolio-Logo-Modern-2.svg";
 
 const Header = () => {
   const activePage = useLocation().pathname;
