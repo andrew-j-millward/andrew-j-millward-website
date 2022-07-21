@@ -114,6 +114,12 @@ $changa-font: 'Changa', sans-serif;
   float: center;
   margin-right: 4vh;
   font-size: 50pt;
+  transition-duration: 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateY(-10%);
+  transition-duration: 0.3s;
 }
 
 .typer h1 {
