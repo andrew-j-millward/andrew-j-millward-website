@@ -31,7 +31,7 @@ $changa-font: 'Changa', sans-serif;
 .App-profile {
   margin-top: 12vh;
   max-height: 60vh;
-  max-width: 100vh;
+  max-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,6 +48,7 @@ $changa-font: 'Changa', sans-serif;
 .App-profile-text {
   max-width: 100%;
   font-size: 40px;
+  line-height: 40px;
   color: #708090;
 }
 
@@ -99,6 +100,107 @@ $changa-font: 'Changa', sans-serif;
   white-space: nowrap;
   transition-duration: 0.3s;
   color: #36454f;
+}
+
+.align-icon {
+  float: left;
+  margin-right: 2vh;
+}
+
+.typer h1 {
+  font-size: 60pt;
+  line-height: 60pt;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: 
+    type-line 9s steps(1, end) forwards,
+    typing 3s steps(36, end),
+    blinking 0.7s step-end 4;
+  border-right: .10em solid #1B282E;
+}
+
+.typer h2 {
+  font-size: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  text-align: left;
+  animation: 
+    typing-h2 3s steps(36, end),
+    blinking 0.7s step-end 3,
+    toggle-visibility 1s step-end forwards;
+    animation-delay: 3s;
+  border-right: .10em solid #1B282E;
+}
+
+.typer-1 p {
+  font-size: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  text-align: left;
+  animation: 
+    typing-p-1 3s steps(36, end),
+    blinking 0.7s step-end 3,
+    toggle-visibility 1s step-end forwards;
+    animation-delay: 6s;
+  border-right: .10em solid #1B282E;
+}
+.typer-2 p {
+  font-size: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  text-align: left;
+  animation: 
+    typing-p-2 3s steps(36, end),
+    blinking 0.7s step-end 3,
+    toggle-visibility 1s step-end forwards;
+    animation-delay: 9s;
+  border-right: .10em solid #1B282E;
+}
+
+@keyframes type-line {
+  0% { margin-top: 0;}
+  33% { margin-top: -120px;}
+  60% { margin-top: -220px;}
+  65% { margin-top: -280px;}
+  100% { margin-top: -280px;}
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 100%; }
+}
+
+@keyframes typing-h2 {
+  0% { width: 0; }
+  50% { width: 68%; }
+}
+
+@keyframes typing-p-1 {
+  0% { width: 0; }
+  50% { width: 82%; }
+}
+
+@keyframes typing-p-2 {
+  0% { width: 0; }
+  50% { width: 73%; }
+}
+
+@keyframes blinking {
+  0%  { border-right: .10em solid #1B282E; }
+  50% { border-right: .10em solid #708090; }
+}
+
+@keyframes toggle-visibility {
+  0% { opacity: 0; }
+  1% { opacity: 1; }
+  100% { opacity: 1; }
 }
 
 // Debugging: Outline the object
