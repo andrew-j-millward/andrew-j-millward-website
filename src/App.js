@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import profile from "./andrew-millward-professional-2-removebg-pentagon-left.png";
+import profile from "./andrew-millward-professional-3-removebg-pentagon.png";
 
 function App() {
   return (
