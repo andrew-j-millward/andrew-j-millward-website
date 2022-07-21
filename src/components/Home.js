@@ -1,7 +1,8 @@
-import { BsLaptop } from "react-icons/bs";
+import { BsLaptop, BsFacebook, BsTwitter, BsGithub } from "react-icons/bs";
 import { SiGitbook } from "react-icons/si";
 import { BiHappyBeaming } from "react-icons/bi";
 import { FiMail } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Home = ({ profile }) => {
   return (
@@ -37,6 +38,22 @@ const Home = ({ profile }) => {
               <FiMail color="#36454f" className="align-icon" />
               Feel free to reach out!
             </p>
+          </div>
+          <br></br>
+          <br></br>
+          <div className="typer-5">
+            <a href="https://www.facebook.com/andrew.j.millward/">
+              <BsFacebook color="#36454f" className="social-icon" />
+            </a>
+            <a href="https://twitter.com/AndrewJMillward">
+              <BsTwitter color="#36454f" className="social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/andrew-j-millward/">
+              <FaLinkedinIn color="#36454f" className="social-icon" />
+            </a>
+            <a href="https://github.com/andrew-j-millward">
+              <BsGithub color="#36454f" className="social-icon" />
+            </a>
           </div>
         </div>
       </div>

@@ -46,10 +46,13 @@ $changa-font: 'Changa', sans-serif;
 }
 
 .App-profile-text {
+  margin-top: 280px;
   max-width: 100%;
   font-size: 40px;
   line-height: 40px;
   color: #708090;
+  animation: 
+    type-line 9s steps(1, end) forwards;
 }
 
 .App-header {
@@ -107,6 +110,12 @@ $changa-font: 'Changa', sans-serif;
   margin-right: 2vh;
 }
 
+.social-icon {
+  float: center;
+  margin-right: 4vh;
+  font-size: 50pt;
+}
+
 .typer h1 {
   font-size: 60pt;
   line-height: 60pt;
@@ -114,7 +123,6 @@ $changa-font: 'Changa', sans-serif;
   white-space: nowrap;
   margin: 0 auto;
   animation: 
-    type-line 9s steps(1, end) forwards,
     typing 3s steps(36, end),
     blinking 0.7s step-end 4;
   border-right: .10em solid #1B282E;
@@ -198,12 +206,19 @@ $changa-font: 'Changa', sans-serif;
   border-right: .10em solid #1B282E;
 }
 
+.typer-5 a {
+  opacity: 0;
+  animation: 
+    toggle-visibility 1s step-end forwards;
+    animation-delay: 10s;
+}
+
 @keyframes type-line {
-  0% { margin-top: 0;}
-  33% { margin-top: -120px;}
-  60% { margin-top: -220px;}
-  65% { margin-top: -280px;}
-  100% { margin-top: -280px;}
+  0% { margin-top: 280px;}
+  33% { margin-top: 160px;}
+  60% { margin-top: 60px;}
+  65% { margin-top: 0px;}
+  100% { margin-top: 0px;}
 }
 
 @keyframes typing {
