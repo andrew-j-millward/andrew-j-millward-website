@@ -1,5 +1,7 @@
-import { GrPersonalComputer } from "react-icons/gr";
+import { BsLaptop } from "react-icons/bs";
 import { SiGitbook } from "react-icons/si";
+import { BiHappyBeaming } from "react-icons/bi";
+import { FiMail } from "react-icons/fi";
 
 const Home = ({ profile }) => {
   return (
@@ -14,14 +16,26 @@ const Home = ({ profile }) => {
           </div>
           <div className="typer-1">
             <p>
-              <GrPersonalComputer className="align-icon" />
+              <BsLaptop color="#36454f" className="align-icon" />
               TDP Software Engineer Associate at Capital One
             </p>
           </div>
           <div className="typer-2">
             <p>
-              <SiGitbook color="black" className="align-icon" />
+              <SiGitbook color="#36454f" className="align-icon" />
               M.S. in Computer Science and Engineering
+            </p>
+          </div>
+          <div className="typer-3">
+            <p>
+              <BiHappyBeaming color="#36454f" className="align-icon" />
+              Enjoys hikes, golf, and games in free time
+            </p>
+          </div>
+          <div className="typer-4">
+            <p>
+              <FiMail color="#36454f" className="align-icon" />
+              Feel free to reach out!
             </p>
           </div>
         </div>

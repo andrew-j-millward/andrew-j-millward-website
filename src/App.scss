@@ -143,13 +143,15 @@ $changa-font: 'Changa', sans-serif;
   opacity: 0;
   text-align: left;
   animation: 
-    typing-p-1 3s steps(36, end),
-    blinking 0.7s step-end 3,
+    typing-p-1 1.5s steps(36, end),
+    blinking 0.7s step-end 1,
     toggle-visibility 1s step-end forwards;
     animation-delay: 6s;
   border-right: .10em solid #1B282E;
 }
+
 .typer-2 p {
+  margin-top: 10px;
   font-size: 30px;
   line-height: 30px;
   overflow: hidden;
@@ -157,8 +159,40 @@ $changa-font: 'Changa', sans-serif;
   opacity: 0;
   text-align: left;
   animation: 
-    typing-p-2 3s steps(36, end),
-    blinking 0.7s step-end 3,
+    typing-p-2 1.5s steps(36, end),
+    blinking 0.7s step-end 1,
+    toggle-visibility 1s step-end forwards;
+    animation-delay: 7s;
+  border-right: .10em solid #1B282E;
+}
+
+.typer-3 p {
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  text-align: left;
+  animation: 
+    typing-p-3 1.5s steps(36, end),
+    blinking 0.7s step-end 1,
+    toggle-visibility 1s step-end forwards;
+    animation-delay: 8s;
+  border-right: .10em solid #1B282E;
+}
+
+.typer-4 p {
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  text-align: left;
+  animation: 
+    typing-p-4 1.5s steps(36, end),
+    blinking 0.7s step-end 1,
     toggle-visibility 1s step-end forwards;
     animation-delay: 9s;
   border-right: .10em solid #1B282E;
@@ -190,6 +224,16 @@ $changa-font: 'Changa', sans-serif;
 @keyframes typing-p-2 {
   0% { width: 0; }
   50% { width: 73%; }
+}
+
+@keyframes typing-p-3 {
+  0% { width: 0; }
+  50% { width: 73%; }
+}
+
+@keyframes typing-p-4 {
+  0% { width: 0; }
+  50% { width: 42%; }
 }
 
 @keyframes blinking {
