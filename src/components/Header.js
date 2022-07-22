@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import LinkSpan from "./LinkSpan";
 import logo from "../Andrew-J-Millward-Portfolio-Logo-Modern-2.svg";
 
-const Header = () => {
+const Header = ({ onSkip }) => {
   const activePage = useLocation().pathname;
   return (
     <div>
@@ -11,11 +11,13 @@ const Header = () => {
           page="home"
           address="/"
           active={activePage === "/" ? true : false}
+          onSkip={onSkip}
         />
         <LinkSpan
           page="about me"
           address="/about"
           active={activePage === "/about" ? true : false}
+          onSkip={onSkip}
         />
         <span>
           <Link to="/">
@@ -26,11 +28,13 @@ const Header = () => {
           page="portfolio"
           address="/portfolio"
           active={activePage === "/portfolio" ? true : false}
+          onSkip={onSkip}
         />
         <LinkSpan
           page="contact me"
           address="/contact"
           active={activePage === "/contact" ? true : false}
+          onSkip={onSkip}
         />
       </header>
     </div>

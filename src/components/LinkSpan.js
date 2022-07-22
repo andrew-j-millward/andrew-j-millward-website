@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-const LinkSpan = ({ page, address, active }) => {
+const LinkSpan = ({ page, address, active, onSkip }) => {
   return (
     <div>
-      <Link to={address}>
+      <Link to={address} onClick={onSkip}>
         {active ? (
           <h1 className="App-link App-header-selected">{page}</h1>
         ) : (
