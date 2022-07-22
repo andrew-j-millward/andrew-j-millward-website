@@ -20,7 +20,7 @@ const Header = ({ onSkip }) => {
           onSkip={onSkip}
         />
         <span>
-          <Link to="/">
+          <Link to="/" onClick={onSkip}>
             <img src={logo} className="App-logo" alt="logo" />
           </Link>
         </span>
