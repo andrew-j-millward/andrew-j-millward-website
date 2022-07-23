@@ -255,11 +255,15 @@
 
 @media (max-width: 1024px) {
     .App-profile-image {
+        margin: auto;
         max-height: 40vh;
+        padding-left: 10vh;
     }
     .App-profile-text {
-        margin-left: 2vw;
+        margin: auto;
+        width: 400px;
         line-height: 2vh;
+        padding-right: 10vh;
     }
     .typer h1 {
         font-size: 38px;
@@ -327,7 +331,11 @@
     }
     @keyframes typing {
         0% { width: 0; }
-        50% { width: 95%; }
+        50% { width: 96%; }
+    }
+    @keyframes typing-h2 {
+        0% { width: 0; }
+        50% { width: 70%; }
     }
     @keyframes typing-p-1 {
         0% { width: 0; }
@@ -354,5 +362,11 @@
 @media (max-width: 768px) {
     .App-profile {
         display: block;
+    }
+    .App-profile-image {
+        padding-left: 0;
+    }
+    .App-profile-text {
+        padding-right: 0;
     }
 }
