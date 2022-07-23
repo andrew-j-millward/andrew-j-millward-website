@@ -264,36 +264,50 @@
     .typer h1 {
         font-size: 38px;
         line-height: 38px;
+        animation: 
+            typing 2.5s steps(36, end),
+            blinking 0.7s step-end 2;
     }
     .typer h2 {
         font-size: 25px;
         line-height: 25px;
         margin: 0 auto;
         text-align: center;
+        animation-delay: 2s;
     }
     .typer-1 p {
         font-size: 17px;
-        line-height: 17px;
         margin: 0 auto;
+        line-height: 17px;
         text-align: center;
+        animation-delay: 4s;
     }
     .typer-2 p {
         font-size: 17px;
+        margin: 0 auto;
+        margin-top: 5px;
         line-height: 17px;
-        margin: 17 auto;
         text-align: center;
+        animation-delay: 5s;
     }
     .typer-3 p {
         font-size: 17px;
+        margin: 0 auto;
+        margin-top: 5px;
         line-height: 17px;
-        margin: 17 auto;
         text-align: center;
+        animation-delay: 6s;
     }
     .typer-4 p {
         font-size: 17px;
+        margin: 0 auto;
+        margin-top: 5px;
         line-height: 17px;
-        margin: 17 auto;
         text-align: center;
+        animation-delay: 7s;
+    }
+    .typer-5 a {
+        animation-delay: 8s;
     }
     .social-icon {
         font-size: 30px;
@@ -311,12 +325,29 @@
         margin: 0 auto;
         text-align: center;
     }
+    @keyframes typing {
+        0% { width: 0; }
+        50% { width: 95%; }
+    }
+    @keyframes typing-p-1 {
+        0% { width: 0; }
+        50% { width: 95%; }
+    }
+    @keyframes typing-p-2 {
+        0% { width: 0; }
+        50% { width: 90%; }
+    }
+    @keyframes typing-p-3 {
+        0% { width: 0; }
+        50% { width: 90%; }
+    }
+    @keyframes typing-p-4 {
+        0% { width: 0; }
+        50% { width: 50%; }
+    }
     @keyframes type-line {
-        0% { margin-top: 320px;}
-        33% { margin-top: 160px;}
-        60% { margin-top: 60px;}
-        65% { margin-top: 0vw;}
-        100% { margin-top: 0vw;}
+        0% { margin-top: 0px;}
+        100% { margin-top: 0px;}
     }
 }
 
