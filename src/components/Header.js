@@ -31,7 +31,7 @@ const Header = ({ onSkip }) => {
           onSkip={onSkip}
         />
         <LinkSpan
-          page="contact me"
+          page="contact"
           address="/contact"
           active={activePage === "/contact" ? true : false}
           onSkip={onSkip}

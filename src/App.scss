@@ -5,6 +5,7 @@ $changa-font: 'Changa', sans-serif;
   font-weight: normal;
   padding : 0;
   margin : 0;
+  background-color: #1B282E;
 }
 
 .App {
@@ -39,6 +40,7 @@ $changa-font: 'Changa', sans-serif;
   table-layout: fixed;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 8vh;
 }
 
 .App-header div {
@@ -71,6 +73,12 @@ $changa-font: 'Changa', sans-serif;
   .App-link {
     font-size: 30pt;
   }
+  .App-header {
+    width: 100%;
+    font-size: 2vw;
+    margin-left: -10pt;
+    padding-top: 1vh;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -79,9 +87,9 @@ $changa-font: 'Changa', sans-serif;
   }
   .App-header {
     width: 100%;
-    font-size: 2vw;
-    margin-left: -10pt;
+    font-size: 1+1vw;
     padding-top: 1vh;
+    margin-bottom: 2vh;
   }
 }
 
