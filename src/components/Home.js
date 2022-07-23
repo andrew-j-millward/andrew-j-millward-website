@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Home = ({ profile, skip, onSkip }) => {
   return (
-    <div className="App-profile">
+    <div className="App-profile Show-box">
       <img src={profile} className="App-profile-image" alt="Profile Headshot" />
       <div
         className={`App-profile-text ${skip ? "skip-animation" : ""}`}

@@ -1,5 +1,5 @@
 .App-profile {
-    margin-top: 12vh;
+    margin-top: 8vh;
     max-height: 60vh;
     max-width: 100vw;
     display: flex;
@@ -15,7 +15,6 @@
 }
 
 .App-profile-text {
-    margin-top: 280px;
     max-width: 100%;
     font-size: 40px;
     line-height: 40px;
@@ -32,7 +31,7 @@
 .social-icon {
     float: center;
     margin-right: 4vh;
-    font-size: 50pt;
+    font-size: 3vw;
     transition-duration: 0.3s;
 }
 
@@ -42,8 +41,8 @@
 }
 
 .typer h1 {
-    font-size: 60pt;
-    line-height: 60pt;
+    font-size: 4vw;
+    line-height: 4vw;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
@@ -54,8 +53,8 @@
 }
 
 .typer h2 {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
     overflow: hidden;
     white-space: nowrap;
     opacity: 0;
@@ -69,8 +68,8 @@
 }
 
 .typer-1 p {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
     overflow: hidden;
     white-space: nowrap;
     opacity: 0;
@@ -85,8 +84,8 @@
 
 .typer-2 p {
     margin-top: 10px;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
     overflow: hidden;
     white-space: nowrap;
     opacity: 0;
@@ -101,8 +100,8 @@
 
 .typer-3 p {
     margin-top: 10px;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
     overflow: hidden;
     white-space: nowrap;
     opacity: 0;
@@ -117,8 +116,8 @@
 
 .typer-4 p {
     margin-top: 10px;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
     overflow: hidden;
     white-space: nowrap;
     opacity: 0;
@@ -139,11 +138,11 @@
 }
 
 @keyframes type-line {
-    0% { margin-top: 280px;}
-    33% { margin-top: 160px;}
-    60% { margin-top: 60px;}
-    65% { margin-top: 0px;}
-    100% { margin-top: 0px;}
+    0% { margin-top: 14vw;}
+    33% { margin-top: 8vw;}
+    60% { margin-top: 3vw;}
+    65% { margin-top: 0vw;}
+    100% { margin-top: 0vw;}
 }
 
 @keyframes typing {
@@ -216,3 +215,40 @@
     animation-fill-mode: forwards;
     animation-delay: 0s
 }
+
+@media (min-width: 1921px) {
+    .typer h1 {
+      font-size: 70px;
+      line-height: 70px;
+    }
+    .typer h2 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    .typer-1 p {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .typer-2 p {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .typer-3 p {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .typer-4 p {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .social-icon {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .App-header {
+      width: 100%;
+      font-size: 2vw;
+      margin-left: -10pt;
+      padding-top: 1vh;
+    }
+  }
