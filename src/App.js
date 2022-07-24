@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 import profile from "./andrew-millward-professional-2-removebg-hexagon-right.png";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/portfolio" element={<h1>Hi3</h1>} />
           <Route exact path="/contact" element={<h1>Hi4</h1>} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

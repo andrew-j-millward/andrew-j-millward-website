@@ -107,6 +107,16 @@ $changa-font: 'Changa', sans-serif;
   color: #36454f;
 }
 
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  width: 100vw;
+  color: #708090;
+}
+#copyright-symbol{
+  font-size: 30em;
+}
+
 // Debugging: Outline the object
 .Show-box {
   border: 5pt solid red;
