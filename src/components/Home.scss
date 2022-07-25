@@ -10,7 +10,7 @@
 }
 
 .App-profile-image {
-    max-height: 80vmin;
+    max-height: 70vmin;
 }
 
 .App-profile-text {
@@ -216,6 +216,9 @@
 }
 
 @media (min-width: 1921px) {
+    .App-profile-image {
+        max-height: 80vmin;
+    }
     .typer h1 {
       font-size: 80px;
       line-height: 80px;
