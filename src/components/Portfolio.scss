@@ -2,4 +2,29 @@
     font-size: 4vw;
     line-height: 4vw;
     color: #708090;
+    margin-bottom: 4vh;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vmin;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-card-outer-left {
+    margin: 0 auto;
+    width: 45%;
+}
+
+.timeline-card-outer-right {
+    margin: 0 auto;
+    width: 45%;
+}
+
+.timeline-strip {
+    margin: 0 auto;
+    width: 10%;
 }
