@@ -1,20 +1,13 @@
 import "./Portfolio.scss";
-import proj1 from "./assets/languages/Python-logo-notext.svg";
 
-const TimelineCard = () => {
+const TimelineCard = ({ leftBool, image }) => {
   return (
-    <div className="timeline">
-      <div className="timeline-card-outer-left">
-        <img src={proj1} />
-      </div>
-
-      <div className="timeline-strip">
-        <img src={proj1} />
-      </div>
-
-      <div className="timeline-card-outer-right">
-        <img src={proj1} />
-      </div>
+    <div
+      className={`${
+        leftBool ? "timeline-card-outer-left" : "timeline-card-outer-right"
+      }`}
+    >
+      <img className="timeline-card-img" src={image} />
     </div>
   );
 };
