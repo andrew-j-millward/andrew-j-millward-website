@@ -15,20 +15,22 @@ function App() {
   };
   return (
     <Router>
-      <div className="App">
-        <Header onSkip={onSkip} />
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={
-              <Home profile={profile} skip={skipAnimation} onSkip={onSkip} />
-            }
-          />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/portfolio" element={<Portfolio />} />
-          <Route exact path="/contact" element={<h1>Hi4</h1>} />
-        </Routes>
+      <div className="App page-container">
+        <div className="content-wrap">
+          <Header onSkip={onSkip} />
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={
+                <Home profile={profile} skip={skipAnimation} onSkip={onSkip} />
+              }
+            />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/portfolio" element={<Portfolio />} />
+            <Route exact path="/contact" element={<h1>Hi4</h1>} />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>

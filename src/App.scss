@@ -109,10 +109,22 @@ $changa-font: 'Changa', sans-serif;
 
 .copyright {
   position: absolute;
-  bottom: 10px;
-  width: 100vw;
+  text-align: center;
+  bottom: 0px;
+  width: 98vw;
+  padding-left: 1vw;
   color: #708090;
+  background-color: transparent;
   font-size: 15px;
+}
+
+.content-wrap {
+  padding-bottom: 25px;    /* Footer height */
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 // Debugging: Outline the object
