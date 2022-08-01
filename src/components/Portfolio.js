@@ -11,14 +11,19 @@ const Portfolio = () => {
         <div className="timeline">
           <TimelineCard leftBool={true} visible={true} image={proj1} />
           <div className="timeline-strip">
-            <img src={center} />
+            <div class="line"></div>
           </div>
           <TimelineCard leftBool={false} visible={false} />
+        </div>
+        <div className="gap-content">
+          <div className="timeline-strip">
+            <div class="line"></div>
+          </div>
         </div>
         <div className="timeline">
           <TimelineCard leftBool={true} visible={false} />
           <div className="timeline-strip">
-            <img src={center} />
+            <div class="line"></div>
           </div>
           <TimelineCard leftBool={false} visible={true} image={proj1} />
         </div>

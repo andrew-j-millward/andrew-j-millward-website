@@ -12,7 +12,16 @@
     font-size: 1.5vmin;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10vh;
+}
+
+.gap-content {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vmin;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .timeline-card-outer-left {
@@ -40,4 +49,14 @@
 
 .timeline-card-img {
     width: 100%;
+}
+
+.line {
+    border-left: 6px solid #36454f;
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+    width: 5%;
 }
