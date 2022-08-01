@@ -7,12 +7,21 @@ const Portfolio = () => {
   return (
     <div>
       <h1 className="portfolio-label">My Portfolio</h1>
-      <div className="timeline">
-        <TimelineCard leftBool={true} image={proj1} />
-        <div className="timeline-strip">
-          <img src={center} />
+      <div>
+        <div className="timeline">
+          <TimelineCard leftBool={true} visible={true} image={proj1} />
+          <div className="timeline-strip">
+            <img src={center} />
+          </div>
+          <TimelineCard leftBool={false} visible={false} />
         </div>
-        <TimelineCard leftBool={false} image={proj1} />
+        <div className="timeline">
+          <TimelineCard leftBool={true} visible={false} />
+          <div className="timeline-strip">
+            <img src={center} />
+          </div>
+          <TimelineCard leftBool={false} visible={true} image={proj1} />
+        </div>
       </div>
     </div>
   );
