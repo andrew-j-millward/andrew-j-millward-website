@@ -26,16 +26,16 @@
 
 .timeline-card-outer-left {
     margin: 0 auto;
-    width: 40%;
+    width: 35vw;
     background-color: #36454f;
-    height: 800px;
+    height: 40vw;
 }
 
 .timeline-card-outer-right {
     margin: 0 auto;
-    width: 40%;
+    width: 35vw;
     background-color: #36454f;
-    height: 800px;
+    height: 40vw;
 }
 
 .timeline-card-invisible {
@@ -53,7 +53,7 @@
 
 .line {
     border-left: 6px solid #36454f;
-    height: 100vh;
+    height: 40vw;
     position: relative;
     left: 50%;
     margin-left: -3px;
