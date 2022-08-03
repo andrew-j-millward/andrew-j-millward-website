@@ -48,7 +48,7 @@
 }
 
 .timeline-card-img {
-    width: 100%;
+    width: 35vw;
 }
 
 .line {
@@ -60,3 +60,14 @@
     top: 0;
     width: 5%;
 }
+
+.buffer {
+    margin: 0 auto;
+    width: 35vw;
+}
+
+@media (max-width: 1024px) {
+    .line {
+        left: 150%;
+    }
+  }
