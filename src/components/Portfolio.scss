@@ -61,6 +61,30 @@
     width: 5%;
 }
 
+.line-element {
+    position: relative;
+    height: 10vh;
+    width: 10vh;
+    background-color: #36454f;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.line-element-inner {
+    height: 9vh;
+    width: 9vh;
+    margin-top: 0.5vh;
+    background-color: #708090;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.line-element-inner p {
+    font-size: 3vh;
+    margin-top: 2vh;
+    background-color: transparent;
+}
+
 .buffer {
     margin: 0 auto;
     width: 35vw;

@@ -1,7 +1,8 @@
+import "../App.scss";
 const Footer = () => {
   return (
-    <div>
-      <p class="copyright">&copy; Andrew J. Millward 2022</p>
+    <div className="copyright">
+      <p>&copy; Andrew J. Millward 2022</p>
     </div>
   );
 };

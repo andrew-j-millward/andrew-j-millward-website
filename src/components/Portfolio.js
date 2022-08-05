@@ -43,7 +43,12 @@ const Portfolio = () => {
             ""
           )}
           <div className="timeline-strip">
-            <div class="line"></div>
+            <div className="line-element">
+              <div className="line-element-inner">
+                <p>2021</p>
+              </div>
+            </div>
+            <div className="line"></div>
           </div>
           <TimelineCard
             leftBool={toggleRight(windowSize)}
@@ -68,9 +73,21 @@ const Portfolio = () => {
             ""
           )}
           <div className="timeline-strip">
-            <div class="line"></div>
+            <div className="line-element">
+              <div className="line-element-inner">
+                <p>2021</p>
+              </div>
+            </div>
+            <div className="line"></div>
           </div>
           <TimelineCard leftBool={false} visible={true} image={proj1} />
+        </div>
+        <div className="timeline-strip">
+          <div className="line-element">
+            <div className="line-element-inner">
+              <p>2021</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

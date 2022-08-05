@@ -31,7 +31,9 @@ function App() {
             <Route exact path="/contact" element={<h1>Hi4</h1>} />
           </Routes>
         </div>
-        <Footer />
+        <div className="footer-gap">
+          <Footer />
+        </div>
       </div>
     </Router>
   );
