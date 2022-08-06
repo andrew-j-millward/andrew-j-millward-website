@@ -90,8 +90,36 @@
     width: 35vw;
 }
 
+@media (min-width: 1921px) {
+    .timeline-card-outer-left {
+        width: 679px;
+        height: 776px;
+        margin-left: 9vw;
+    }
+    .timeline-card-outer-right {
+        width: 679px;
+        height: 776px;
+        margin-right: 9vw;
+    }
+    .timeline-card-img {
+        width: 679px;
+    }
+    .line {
+        height: 776px;
+    }
+}
+
+@media (min-width: 2766px) {
+    .timeline-card-outer-left {
+        margin-left: 20vw;
+    }
+    .timeline-card-outer-right {
+        margin-right: 20vw;
+    }
+}
+
 @media (max-width: 1024px) {
     .line {
         left: 150%;
     }
-  }
+}

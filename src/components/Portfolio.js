@@ -6,6 +6,7 @@ import center from "./assets/languages/Python-logo-notext.svg";
 
 const getWindowSize = () => {
   const { innerWidth: width, innerHeight: height } = window;
+  console.log(width, height);
   return { width, height };
 };
 
