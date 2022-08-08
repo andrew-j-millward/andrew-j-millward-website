@@ -43,7 +43,7 @@ const Portfolio = () => {
           ) : (
             ""
           )}
-          <div className="timeline-strip">
+          <div className="timeline-strip show-box">
             <div className="line-element">
               <div className="line-element-inner">
                 <p>2021</p>
@@ -57,9 +57,9 @@ const Portfolio = () => {
             image={toggleRight(windowSize) ? proj1 : null}
           />
         </div>
-        <div className="gap-content">
+        <div className="gap-content show-box">
           <div className="timeline-strip">
-            <div className="line"></div>
+            {/*<div className="line"></div>*/}
           </div>
           {toggleRight(windowSize) ? <div className="buffer"></div> : ""}
         </div>
@@ -83,12 +83,32 @@ const Portfolio = () => {
           </div>
           <TimelineCard leftBool={false} visible={true} image={proj1} />
         </div>
-        <div className="timeline-strip">
-          <div className="line-element">
-            <div className="line-element-inner">
-              <p>2021</p>
+        <div className="gap-content show-box">
+          <div className="timeline-strip">
+            <div className="line-element">
+              <div className="line-element-inner">
+                <p>2021</p>
+              </div>
             </div>
           </div>
+          {toggleRight(windowSize) ? <div className="buffer"></div> : ""}
+        </div>
+        <div className="timeline">
+          {!toggleRight(windowSize) ? (
+            <TimelineCard
+              leftBool={!toggleRight(windowSize)}
+              visible={!toggleRight(windowSize)}
+              image={!toggleRight(windowSize) ? proj1 : null}
+            />
+          ) : (
+            ""
+          )}
+          <div className="timeline-strip"></div>
+          <TimelineCard
+            leftBool={toggleRight(windowSize)}
+            visible={toggleRight(windowSize)}
+            image={toggleRight(windowSize) ? proj1 : null}
+          />
         </div>
       </div>
     </div>
