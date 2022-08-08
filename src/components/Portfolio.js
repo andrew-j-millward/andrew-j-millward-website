@@ -43,7 +43,7 @@ const Portfolio = () => {
           ) : (
             ""
           )}
-          <div className="timeline-strip show-box">
+          <div className="timeline-strip">
             <div className="line-element">
               <div className="line-element-inner">
                 <p>2021</p>
@@ -57,10 +57,8 @@ const Portfolio = () => {
             image={toggleRight(windowSize) ? proj1 : null}
           />
         </div>
-        <div className="gap-content show-box">
-          <div className="timeline-strip">
-            {/*<div className="line"></div>*/}
-          </div>
+        <div className="gap-content">
+          <div className="timeline-strip"></div>
           {toggleRight(windowSize) ? <div className="buffer"></div> : ""}
         </div>
         <div className="timeline">
@@ -83,14 +81,8 @@ const Portfolio = () => {
           </div>
           <TimelineCard leftBool={false} visible={true} image={proj1} />
         </div>
-        <div className="gap-content show-box">
-          <div className="timeline-strip">
-            <div className="line-element">
-              <div className="line-element-inner">
-                <p>2021</p>
-              </div>
-            </div>
-          </div>
+        <div className="gap-content">
+          <div className="timeline-strip"></div>
           {toggleRight(windowSize) ? <div className="buffer"></div> : ""}
         </div>
         <div className="timeline">
@@ -103,7 +95,14 @@ const Portfolio = () => {
           ) : (
             ""
           )}
-          <div className="timeline-strip"></div>
+          <div className="timeline-strip">
+            <div className="line-element">
+              <div className="line-element-inner">
+                <p>2021</p>
+              </div>
+            </div>
+            <div className="line-end"></div>
+          </div>
           <TimelineCard
             leftBool={toggleRight(windowSize)}
             visible={toggleRight(windowSize)}
