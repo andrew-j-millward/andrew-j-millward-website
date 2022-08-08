@@ -31,7 +31,9 @@ const Portfolio = () => {
 
   return (
     <div>
-      <h1 className="portfolio-label">My Portfolio</h1>
+      <div className="portfolio-label">
+        <h1>My Portfolio</h1>
+      </div>
       <div>
         <div className="timeline">
           {!toggleRight(windowSize) ? (
@@ -58,7 +60,9 @@ const Portfolio = () => {
           />
         </div>
         <div className="gap-content">
-          <div className="timeline-strip"></div>
+          <div className="timeline-strip">
+            <div className="line"></div>
+          </div>
           {toggleRight(windowSize) ? <div className="buffer"></div> : ""}
         </div>
         <div className="timeline">
@@ -82,7 +86,9 @@ const Portfolio = () => {
           <TimelineCard leftBool={false} visible={true} image={proj1} />
         </div>
         <div className="gap-content">
-          <div className="timeline-strip"></div>
+          <div className="timeline-strip">
+            <div className="line"></div>
+          </div>
           {toggleRight(windowSize) ? <div className="buffer"></div> : ""}
         </div>
         <div className="timeline">
