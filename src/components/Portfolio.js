@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "./Portfolio.scss";
 import TimelineSegment from "./TimelineSegment";
 import proj1 from "./assets/projects/L2-UniFrac-Cover-Photo.png";
-import center from "./assets/languages/Python-logo-notext.svg";
 
 const getWindowSize = () => {
   const { innerWidth: width, innerHeight: height } = window;

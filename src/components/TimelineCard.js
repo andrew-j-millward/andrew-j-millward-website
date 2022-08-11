@@ -7,7 +7,15 @@ const TimelineCard = ({ leftBool, visible, image }) => {
         leftBool ? "timeline-card-outer-left" : "timeline-card-outer-right"
       } ${visible ? "" : "timeline-card-invisible"}`}
     >
-      <img className="timeline-card-img" src={image} />
+      {visible ? (
+        <img
+          className="timeline-card-img"
+          alt="timeline card project"
+          src={image}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 };
