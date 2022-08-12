@@ -36,6 +36,8 @@ const Portfolio = () => {
           windowSize={windowSize}
           leftToggle={true}
           endToggle={false}
+          heading={"L2-UniFrac"}
+          bodyText={""}
         />
         <TimelineSegment
           image={proj1}
@@ -43,6 +45,8 @@ const Portfolio = () => {
           windowSize={windowSize}
           leftToggle={false}
           endToggle={false}
+          heading={"L2-UniFrac"}
+          bodyText={""}
         />
         <TimelineSegment
           image={proj1}
@@ -50,6 +54,8 @@ const Portfolio = () => {
           windowSize={windowSize}
           leftToggle={true}
           endToggle={true}
+          heading={"L2-UniFrac"}
+          bodyText={""}
         />
       </div>
     </div>

@@ -1,6 +1,6 @@
 import "./Portfolio.scss";
 
-const TimelineCard = ({ leftBool, visible, image }) => {
+const TimelineCard = ({ leftBool, visible, image, heading, bodyText }) => {
   return (
     <div
       className={`${
@@ -13,6 +13,11 @@ const TimelineCard = ({ leftBool, visible, image }) => {
           alt="timeline card project"
           src={image}
         />
+      ) : (
+        ""
+      )}
+      {visible ? (
+        <h1 className="portfolio-label timeline-card-h1">{heading}</h1>
       ) : (
         ""
       )}

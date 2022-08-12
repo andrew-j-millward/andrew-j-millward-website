@@ -10,6 +10,8 @@ const TimelineSegment = ({
   windowSize,
   leftToggle,
   endToggle,
+  heading,
+  bodyText,
 }) => {
   return (
     <div className="timeline-segment">
@@ -31,6 +33,8 @@ const TimelineSegment = ({
                 ? image
                 : null
             }
+            heading={heading}
+            bodyText={bodyText}
           />
         ) : (
           ""
@@ -52,9 +56,17 @@ const TimelineSegment = ({
             leftBool={toggleRight(windowSize)}
             visible={toggleRight(windowSize)}
             image={toggleRight(windowSize) ? image : null}
+            heading={heading}
+            bodyText={bodyText}
           />
         ) : (
-          <TimelineCard leftBool={false} visible={true} image={image} />
+          <TimelineCard
+            leftBool={false}
+            visible={true}
+            image={image}
+            heading={heading}
+            bodyText={bodyText}
+          />
         )}
       </div>
       {endToggle ? (
