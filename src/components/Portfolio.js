@@ -5,12 +5,12 @@ import proj1 from "./assets/projects/L2-UniFrac-Cover-Photo.png";
 
 const getWindowSize = () => {
   const { innerWidth: width, innerHeight: height } = window;
-  console.log(width, height);
   return { width, height };
 };
 
 const Portfolio = () => {
   const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [scrollTop, setScrollTop] = useState(0);
 
   useEffect(() => {
     function handleWindowResize() {
@@ -23,6 +23,20 @@ const Portfolio = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
+
+  useEffect(() => {
+    function handleScroll() {
+      let currentPosition = window.scrollY;
+      setScrollTop(currentPosition);
+      console.log(currentPosition);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollTop]);
 
   return (
     <div>
