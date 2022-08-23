@@ -48,7 +48,13 @@ const TimelineSegment = ({
           {endToggle ? (
             <div className="line-end"></div>
           ) : (
-            <div className="line"></div>
+            <div>
+              <div
+                style={{ borderLeft: "6px solid #708090", height: "0vw" }}
+                className="line"
+              ></div>
+              <div style={{ height: "35vw" }} className="line"></div>
+            </div>
           )}
         </div>
         {leftToggle ? (
